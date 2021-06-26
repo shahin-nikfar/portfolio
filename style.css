@@ -1,0 +1,121 @@
+/* Variables */
+:root {
+    --dark: #006360;
+    --light: #58b0ac;
+}
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Element Selectors */
+body {
+    background-color: #d8e6e5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #58b0ac;
+    color: #ffffff;
+    border-bottom: 3px solid #006360;
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: 3px 3px var(--dark);
+}
+
+h2 {
+    position: relative;
+    top: 60px;
+    font-size: 30px;
+}
+
+nav {
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+}
+
+li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Class selectors */
+/* Defines the container for the all items in Work */
+.card-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 10px;
+    transition: flex-basis 500ms linear;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Defines the container for each item in Work */
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Defines the container for each section in the main part of the website */
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+/* Displays the items in each block class horizontally */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Container for the About Me text */
+.container1 {
+    width: 80%;
+    margin-left: 40px;
+    padding-left: 80px;
+    font-size: 20px;
+}
+
+/* Container for the Contact Me list */
+.container2 {
+    position: relative;
+    top: 65px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+
+/* Positioning for the Contact Me header */
+.contactMe {
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+}
+
+/* ID selectors */
+/* Cat Image */
+#bigImage {
+    height: 550px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #006360;
+    background-image: url(https://www.freewebheaders.com/wp-content/gallery/cats/cute-sleepy-kitten-website-header.jpg);
+    background-size: cover;
+    background-position: center;
+}
